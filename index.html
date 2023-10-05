@@ -18,51 +18,18 @@
       object-fit: cover;
       z-index: -1;
     }
-    .container {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1;
-    }
-    .btn-custom {
-      margin: 10px;
-      padding: 15px 30px;
-      background-color: #232323;
-      border: none;
-      color: #ffffff;
-      font-size: 16px;
-      transition: background-color 0.5s ease;
-    }
-    .btn-custom:hover {
-      background-color: #ccc;
-    }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: stretch;  
-      }
-      .btn-container {
-        flex-direction: column !important;
-      }
-      .btn-custom {
-        padding: 20px 20px;  
-        font-size: 18px;    
-      }
-    }
   </style>
 </head>
 <body>
   <video class="bg" src="img/Sequence blue_150px.mp4" type="video/mp4" autoplay loop muted></video>
-  <div class="container d-flex flex-wrap">
-    <div class="d-flex flex-wrap btn-container">
-      <a class="btn btn-custom flex-fill text-center" href="https://renderless.eu/" target="_blank">Renderless's Website</a>
-      <a class="btn btn-custom flex-fill text-center" href="https://www.instagram.com/renderlesseu/" target="_blank">Renderless's Instagram</a>
-      <a class="btn btn-custom flex-fill text-center" href="http://proyectualst.com/" target="_blank">Proyectual Studio's Website</a>
-      <a class="btn btn-custom flex-fill text-center" href="https://www.linkedin.com/in/christian-corral-burau-0a2bba1b1/" target="_blank">Christian's LinkedIn</a>
-      <a class="btn btn-custom flex-fill text-center" href="https://www.facebook.com/profile.php?id=61551651983616" target="_blank">Renderless's Facebook</a>
-      <a class="btn btn-custom flex-fill text-center" href="https://twitter.com/Chrixco9" target="_blank">Christian's Twitter</a>
-    </div>
+  <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+    <img src="img/logo negro fondo blacno.png" alt="Logo Renderless" class="img-fluid mx-auto d-block my-2">
+    <a class="btn btn-dark w-100 w-lg-auto text-center my-2" href="https://renderless.eu/" target="_blank">Renderless's Website</a>
+    <a class="btn btn-dark w-100 w-lg-auto text-center my-2" href="https://www.instagram.com/renderlesseu/" target="_blank">Renderless's Instagram</a>
+    <a class="btn btn-dark w-100 w-lg-auto text-center my-2" href="http://proyectualst.com/" target="_blank">Proyectual Studio's Website</a>
+    <a class="btn btn-dark w-100 w-lg-auto text-center my-2" href="https://www.linkedin.com/in/christian-corral-burau-0a2bba1b1/" target="_blank">Christian's LinkedIn</a>
+    <a class="btn btn-dark w-100 w-lg-auto text-center my-2" href="https://www.facebook.com/profile.php?id=61551651983616" target="_blank">Renderless's Facebook</a>
+    <a class="btn btn-dark w-100 w-lg-auto text-center my-2" href="https://twitter.com/Chrixco9" target="_blank">Christian's Twitter</a>
   </div>
 </body>
 </html>
