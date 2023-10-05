@@ -18,15 +18,22 @@
       object-fit: cover;
       z-index: -1;
     }
-    .btn-lg {
-      min-width: 200px; /* Set a minimum width */
+
+    @media (max-width: 768px) {
+      .btn-lg {
+        font-size: 24px;
+        padding: 20px 20px;
+        min-width: 200px; /* Set a minimum width */
+        min-height: 100px; /* Set a minimum width */
+        font-size: 50px;
+      }
     }
   </style>
 </head>
 <body>
   <video class="bg" src="img/Sequence blue_150px.mp4" type="video/mp4" autoplay loop muted></video>
   <div class="container d-flex flex-column justify-content-center align-items-center h-100">
-    <img src="img/logo negro fondo blacno.png" alt="Logo Renderless" class="img-fluid mx-auto d-block my-4 w-50">
+    <img src="img/logo negro fondo blacno.png" alt="Logo Renderless" class="img-fluid mx-auto d-block my-4" style="max-width: 150px;">
     <a class="btn btn-dark btn-lg w-100 w-lg-auto text-center my-2" href="https://renderless.eu/" target="_blank">Renderless's Website</a>
     <a class="btn btn-dark btn-lg w-100 w-lg-auto text-center my-2" href="https://www.instagram.com/renderlesseu/" target="_blank">Renderless's Instagram</a>
     <a class="btn btn-dark btn-lg w-100 w-lg-auto text-center my-2" href="http://proyectualst.com/" target="_blank">Proyectual Studio's Website</a>
